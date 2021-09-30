@@ -1,0 +1,503 @@
+/*ШРИФТЫ*/
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('../css/fonts/YSText-Medium.eot');
+  src: url('../css/fonts/YSText-Medium.eot?#iefix') format('embedded-opentype'), url('../css/fonts/YSText-Medium.woff2') format('woff2'), url('../css/fonts/YSText-Medium.woff') format('woff'), url('../css/fonts/YSText-Medium.ttf') format('truetype'), url('../css/fonts/YSText-Medium.svg#YSText-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('../css/fonts/YSText-Light.eot');
+  src: url('../css/fonts/YSText-Light.eot?#iefix') format('embedded-opentype'), url('../css/fonts/YSText-Light.woff2') format('woff2'), url('../css/fonts/YSText-Light.woff') format('woff'), url('../css/fonts/YSText-Light.ttf') format('truetype'), url('../css/fonts/YSText-Light.svg#YSText-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('../css/fonts/YSText-BoldItalic.eot');
+  src: url('../css/fonts/YSText-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../css/fonts/YSText-BoldItalic.woff2') format('woff2'), url('../css/fonts/YSText-BoldItalic.woff') format('woff'), url('../css/fonts/YSText-BoldItalic.ttf') format('truetype'), url('../css/fonts/YSText-BoldItalic.svg#YSText-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('../css/fonts/YSText-RegularItalic.eot');
+  src: url('../css/fonts/YSText-RegularItalic.eot?#iefix') format('embedded-opentype'), url('../css/fonts/YSText-RegularItalic.woff2') format('woff2'), url('../css/fonts/YSText-RegularItalic.woff') format('woff'), url('../css/fonts/YSText-RegularItalic.ttf') format('truetype'), url('../css/fonts/YSText-RegularItalic.svg#YSText-RegularItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('../css/fonts/YSText-LightItalic.eot');
+  src: url('../css/fonts/YSText-LightItalic.eot?#iefix') format('embedded-opentype'), url('../css/fonts/YSText-LightItalic.woff2') format('woff2'), url('../css/fonts/YSText-LightItalic.woff') format('woff'), url('../css/fonts/YSText-LightItalic.ttf') format('truetype'), url('../css/fonts/YSText-LightItalic.svg#YSText-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('../css/fonts/YSText-Bold.eot');
+  src: url('../css/fonts/YSText-Bold.eot?#iefix') format('embedded-opentype'), url('../css/fonts/YSText-Bold.woff2') format('woff2'), url('../css/fonts/YSText-Bold.woff') format('woff'), url('../css/fonts/YSText-Bold.ttf') format('truetype'), url('../css/fonts/YSText-Bold.svg#YSText-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('../css/fonts/YSText-MediumItalic.eot');
+  src: url('../css/fonts/YSText-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../css/fonts/YSText-MediumItalic.woff2') format('woff2'), url('../css/fonts/YSText-MediumItalic.woff') format('woff'), url('../css/fonts/YSText-MediumItalic.ttf') format('truetype'), url('../css/fonts/YSText-MediumItalic.svg#YSText-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: url('../css/fonts/YSText-Regular.eot');
+  src: url('../css/fonts/YSText-Regular.eot?#iefix') format('embedded-opentype'), url('../css/fonts/YSText-Regular.woff2') format('woff2'), url('../css/fonts/YSText-Regular.woff') format('woff'), url('../css/fonts/YSText-Regular.ttf') format('truetype'), url('../css/fonts/YSText-Regular.svg#YSText-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*MAIN*/
+
+body {
+  font-family: 'YS Text';
+  font-size: 18px;
+  width: 100%;
+  position: relative;
+  line-height: 1.1;
+  font-weight: normal;
+  font-style: normal;
+  color: #fffffe;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+  width: 1530px!important;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: -100;
+  transition: opacity 0.8s ease;
+  opacity: 0;
+}
+
+body.hide:before {
+  z-index: 2;
+  opacity: 1;
+}
+
+body.hide {
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 2084px;
+  position: relative;
+  overflow: hidden;
+  background: #000000;
+  min-height: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.wrapper:after {
+  content: '';
+  background: url(../img/ya.png)no-repeat center center;
+  width: 756px;
+  height: 100%;
+  position: absolute;
+  top: 137px;
+  right: 35px;
+  background-size: contain;
+}
+
+.container {
+  max-width: 1530px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  z-index: 99
+}
+
+::selection {
+  background: #231f20;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #231f20;
+  color: #fff;
+}
+
+* {
+  outline: none;
+}
+
+.-center {
+  text-align: center;
+}
+
+.-left {
+  text-align: left;
+}
+
+.-right {
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.clear {
+  height: 0;
+  clear: both;
+}
+
+a:link,
+a:visited,
+a:active,
+a {
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  /*color: #008ace;*/
+  text-decoration: none;
+  color: #353535;
+}
+
+a:hover {
+  /*color: #ff0000;*/
+  text-decoration: none;
+  color: #353535;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn:hover {}
+
+img {
+  max-width: 100%
+}
+
+p {}
+
+
+/*form-control*/
+
+.form-control:focus {
+  color: #610446;
+  background-color: #fff;
+  border-color: #610446;
+  outline: 0;
+  box-shadow: none;
+}
+
+*::-webkit-input-placeholder,
+*:-moz-placeholder,
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.title_form {
+  font-size: 79px;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+
+.main_form_row {
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]+label span {
+  display: inline-block;
+  vertical-align: middle;
+  background: #fff;
+  /*border: 3px solid #fff;*/
+  border-radius: 50%;
+  position: absolute;
+  top: 82px;
+  right: -25px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.text-body input[type="checkbox"]+label span {
+  top: 69px;
+  right: 15px;
+}
+
+input[type="checkbox"]:checked+label span {
+  background: url(../img/ok.png) #fff center center no-repeat;
+}
+
+.main_form_item_row {
+  display: flex;
+}
+
+.form-check-label {
+  position: relative;
+}
+
+.text_box_form {
+  max-width: 256px;
+  margin-right: 78px;
+}
+
+.text_box_title {
+  font-size: 53px;
+  letter-spacing: 0.91px;
+  margin-bottom: 56px;
+}
+
+.text_box_anons {
+  font-size: 33px;
+}
+
+.other {
+  background: url(../img/item5.png) center center no-repeat #000;
+  width: 477px;
+  height: 477px;
+}
+
+.text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none!important;
+  width: 348px;
+height: 250px;
+overflow: hidden;
+}
+
+#textarea {
+  text-align: center;
+  outline: none;
+  -moz-appearance: none;
+  resize: none;
+  width: 384px;
+  height: auto;
+  overflow: hidden;
+  font-size: 41px!important;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  min-height: 51px;
+  overflow: hidden;
+  word-wrap: anywhere;
+
+}
+
+
+.slide_info_center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  transform: translateY(-50%);
+}
+
+.bottom_form {
+  margin-top: 15px;
+}
+
+.row_bottom {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row_bottom label {
+  font-size: 45px;
+  letter-spacing: 0.79px;
+  font-weight: 300;
+  width: 277px;
+  /*margin-right: 57px;*/
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+.row_bottom input[type="text"] {
+  width: 624px;
+  height: 85px;
+  padding: 13px 19px;
+  color: #000;
+  font-size: 21px;
+}
+
+button.submit_btn {
+  background-color: #000000;
+  border: 3px solid #ffffff;
+  border-radius: 0;
+  width: 464px;
+  height: 85px;
+  line-height: 85px;
+  text-align: center!important;
+  font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 0.91px;
+  text-transform: uppercase;
+  margin-left: 54px;
+  color: #fff;
+  position: relative;
+}
+
+.form-check {
+  padding-left: 0;
+}
+
+.num_chek {
+  position: absolute;
+  /* top: 0; */
+  bottom: 1px;
+  right: 42px;
+}
+
+.chek_btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.chek_btn .up,
+.chek_btn .down {
+  position: relative;
+  background: #000000;
+  font-size: 42px;
+  color: #fffffe;
+  width: 41px;
+  height: 39px;
+  display: block;
+  border: 2px solid #fff;
+}
+
+.chek_btn .up:before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 42px;
+}
+
+.chek_btn .down:before {
+  content: '-';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 42px;
+
+}
+
+.num_chek input {
+  height: 50px;
+  border-radius: 0;
+  background: #fff;
+  color: #000000;
+  font-size: 24px;
+  width: 41px;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+.text-body .num_chek {
+  position: absolute;
+  /* top: 0; */
+  bottom: 182px;
+  right: -15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+#loader{display: none;}
+#loader{position: absolute; top: 5px; right: 5px;}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}

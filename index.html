@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+   <head>
+      <title>Stikers</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+
+      <meta name="theme-color" content="#fc8839">
+      <link rel="stylesheet" href="css/normalize.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="container">
+            <div class="title_form">Выбери или создай уникальный стикер</div>
+            <form class="main_form">
+               <div class="row main_form_row">
+                  <div class="col-3 main_form_col">
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        <span></span><img src="img/item1.png" alt="">
+                        </label>
+                        <div class="num_chek">
+                           <div class="chek_btn">
+                              <a href="#" class="up"></a>
+                              <input class="product-item-amount-field" type="number" disabled name="number1" value="0" id="number1">
+                              <a href="#" class="down"></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-3 main_form_col">
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                        <span></span><img src="img/item2.png" alt="">
+                        </label>
+                        <div class="num_chek">
+                           <div class="chek_btn">
+                              <a href="#" class="up"></a>
+                              <input class="product-item-amount-field" type="number" disabled name="number2" value="0" id="number2">
+                              <a href="#" class="down"></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-3 main_form_col">
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                        <label class="form-check-label" for="defaultCheck3">
+                        <span></span><img src="img/item3.png" alt="">
+                        </label>
+                        <div class="num_chek">
+                           <div class="chek_btn">
+                              <a href="#" class="up"></a>
+                              <input class="product-item-amount-field" type="number" disabled name="number3" value="0" id="number3">
+                              <a href="#" class="down"></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-3 main_form_col">
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                        <label class="form-check-label" for="defaultCheck4">
+                        <span></span><img src="img/item4.png" alt="">
+                        </label>
+                        <div class="num_chek">
+                           <div class="chek_btn">
+                              <a href="#" class="up"></a>
+                              <input class="product-item-amount-field" type="number" disabled name="number4" value="0" id="number4">
+                              <a href="#" class="down"></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main_form_item_row">
+                  <div class="main_form_col">
+                     <div class="text_box_form">
+                        <div class="text_box_title">Свой вариант</div>
+                        <div class="text_box_anons">Введи текст в область на стикере, чтобы увидеть, как он будет выглядеть</div>
+                     </div>
+                  </div>
+                  <div class="main_form_col">
+                     <div class="form-check text-body" id="capture">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                        <label class="form-check-label other" for="defaultCheck5">
+                        <span></span>
+                        </label>
+                        <div class="text">
+                           <div contenteditable="true" id="textarea"></div>
+                        </div>
+
+                        <div class="num_chek">
+                           <div class="chek_btn">
+                              <a href="#" class="up"></a>
+                              <input class="product-item-amount-field" type="number" disabled name="number5" value="0">
+                              <a href="#" class="down"></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="bottom_form">
+                  <div class="form-group row_bottom">
+                     <label for="name">Твои имя и фамилия</label>
+                     <input type="text" class="form-control" id="name" name="name">
+                     <button type="button" class="submit_btn">ОТПРАВИТЬ <div class="lds-facebook" id="loader"><div></div><div></div><div></div></div></button>
+                  </div>
+               </div>
+
+
+            </form>
+         </div>
+      </div>
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/html2canvas.min.js"></script>
+      <script src="js/common.js"></script>
+
+   </body>
+</html>
